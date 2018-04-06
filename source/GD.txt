@@ -1,0 +1,6 @@
+  predictions = X*theta;
+	sigmaterm = predictions - y;
+	minusterm = alpha/m*sum(sigmaterm);
+	theta(1) = theta(1) - minusterm;
+	theta(2) = theta(2) - minusterm * X(iter,2);
+
